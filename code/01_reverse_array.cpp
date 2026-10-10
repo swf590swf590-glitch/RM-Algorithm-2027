@@ -1,10 +1,16 @@
-// 崇实战队27赛季算法组第一次作业 - 第1题（练习草稿）
-// 当前版本用于确认双指针核心逻辑；尚未按原题要求接收标准输入。
+// 崇实战队27赛季算法组第一次作业 - 第1题
+// 2026-10-10 学生独立编写的最新练习版本（WIP：尚未完成输出格式和输入范围验证）
+// TODO: 在 main 中读取 n 后、读入 arr 元素前验证 0 <= n <= 100
+// TODO: 输出时以空格分隔数字，并在末尾换行
+#include <stdio.h>
 #include <iostream>
 
 void reverseArray(int* arr, int n) {
     if (n <= 1) {
-        return;  // 0个或1个元素无需反转
+        return;
+    }
+    if (n < 0 || n > 100) {
+        return;
     }
 
     int* left = arr;
@@ -14,24 +20,22 @@ void reverseArray(int* arr, int n) {
         int temp = *left;
         *left = *right;
         *right = temp;
-        ++left;
-        --right;
+        left++;
+        right--;
     }
+    return;
 }
 
 int main() {
-    // TODO: 改为读取 n 和 n 个整数，而不是使用写死的数据。
-    // TODO: 根据题目要求考虑 n=0，保持原地反转。
-    int arr[5] = {10, 20, 30, 40, 50};
-    int n = sizeof(arr) / sizeof(arr[0]);
-
-    reverseArray(arr, n);
-
-    // TODO: 检查输出格式，元素之间用一个空格隔开。
-    for (int i = 0; i < n; ++i) {
-        if (i > 0) std::cout << ' ';
-        std::cout << arr[i];
+    int arr[100];
+    int n = 0;
+    std::cin >> n;
+    for (int i = 0; i < n; i++) {
+        std::cin >> arr[i];
     }
-    std::cout << '\n';
+    reverseArray(arr, n);
+    for (int i = 0; i < n; i++) {
+        printf("%d", arr[i]);
+    }
     return 0;
 }
