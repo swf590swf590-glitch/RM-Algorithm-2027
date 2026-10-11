@@ -8,6 +8,8 @@
 - `code/01_reverse_array.cpp`：第一题代码，已实现标准输入、双指针原地反转与空格分隔输出；用户已确认本地运行成功，完整边界测试待确认。
 - `code/02_climb_stairs.cpp`：第二题代码，递归与迭代计算爬楼梯方法数；作者在本地编译成功，已确认 n=0、1、5 三组运行结果正确。
 - `tests/02_climb_stairs_test_plan.md`：第二题测试计划与已确认的本地运行结果。
+- `code/03_binary_tree.cpp`：第三题代码，使用数组建树，递归实现前序与中序遍历；作者已在本地编译运行成功。
+- `tests/03_binary_tree_test_record.md`：第三题本地测试输出记录。
 - `report/learning_report_draft.md`：学习报告初稿，记录已实际完成的学习内容；并非最终汇报。
 - `original/`：待上传原题 Markdown、PDF 和参考附件。
 
@@ -17,7 +19,7 @@
 | --- | --- |
 | 数组反转 | 已实现并由作者确认本地运行成功，待补充完整边界测试 |
 | 爬楼梯 | 两个算法及输出已完成；本地编译成功，n=0、1、5 测试通过；其他测试待做 |
-| 二叉树遍历 | 未开始 |
+| 二叉树遍历 | 前序和中序递归遍历完成；本地编译及示例输出已确认 |
 | 成绩统计与安全查询 | 未开始 |
 | 学习报告 | Markdown 初稿；PDF 尚未生成 |
 | 原题文件与附件 | 待上传 |
@@ -35,6 +37,13 @@ g++ -std=c++17 -Wall -Wextra code/01_reverse_array.cpp -o reverse_array.exe
 ```powershell
 g++ -std=c++17 -Wall -Wextra code/02_climb_stairs.cpp -o stairs.exe
 .\stairs.exe
+```
+
+## 编译第三题
+
+```powershell
+g++ -std=c++17 -Wall -Wextra code/03_binary_tree.cpp -o binary_tree.exe
+.\binary_tree.exe
 ```
 
 ## 提交前检查
