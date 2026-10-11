@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<iostream>
+// 使用首尾指针原地交换数组元素，不额外创建数组。
 void reverseArray(int* arr, int n) {
 	if (n <= 1) {
 		return;
