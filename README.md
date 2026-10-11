@@ -10,6 +10,8 @@
 - `tests/02_climb_stairs_test_plan.md`：第二题测试计划与已确认的本地运行结果。
 - `code/03_binary_tree.cpp`：第三题代码，使用数组建树，递归实现前序与中序遍历；作者已在本地编译运行成功。
 - `tests/03_binary_tree_test_record.md`：第三题本地测试输出记录。
+- `code/04_scores.cpp`：第四题成绩统计与安全查询程序；用户已确认本地运行成功，另有辅助环境多种输入测试记录。
+- `tests/04_scores_test_record.md`：第四题测试记录与统计规则说明。
 - `report/learning_report_draft.md`：学习报告初稿，记录已实际完成的学习内容；并非最终汇报。
 - `original/`：待上传原题 Markdown、PDF 和参考附件。
 
@@ -20,7 +22,7 @@
 | 数组反转 | 已实现并由作者确认本地运行成功，待补充完整边界测试 |
 | 爬楼梯 | 两个算法及输出已完成；本地编译成功，n=0、1、5 测试通过；其他测试待做 |
 | 二叉树遍历 | 前序和中序递归遍历完成；本地编译及示例输出已确认 |
-| 成绩统计与安全查询 | 未开始 |
+| 成绩统计与安全查询 | 七个函数均已整合；本地编译运行成功，辅助环境测试通过 |
 | 学习报告 | Markdown 初稿；PDF 尚未生成 |
 | 原题文件与附件 | 待上传 |
 | 群收集表 | 未提交 |
@@ -46,9 +48,16 @@ g++ -std=c++17 -Wall -Wextra code/03_binary_tree.cpp -o binary_tree.exe
 .\binary_tree.exe
 ```
 
+## 编译第四题
+
+```powershell
+g++ -std=c++17 -Wall -Wextra code/04_scores.cpp -o scores.exe
+.\scores.exe
+```
+
 ## 提交前检查
 
-- [ ] 四道题尽力完成、编译并测试
+- [x] 四道题均已有代码、成功运行的测试；完整边界测试仍可补充
 - [x] 第一题已实现标准输入/输出及空数组处理逻辑（仍建议补做完整测试）
 - [ ] 原题文件在仓库中
 - [ ] 学习报告同时包含 `.md` 与 `.pdf`
