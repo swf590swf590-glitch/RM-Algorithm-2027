@@ -1,5 +1,6 @@
 #include <iostream>
 
+// 递归：把 n 阶问题分解成 n-1 阶与 n-2 阶两个子问题。
 long long climbStairsRecur(int n) {
     if (n == 0||n == 1) {
         return 1;
