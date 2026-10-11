@@ -16,6 +16,7 @@ void buildTestTree(int* tree, int n) {
     return;
 }
 
+// 前序遍历：先输出当前节点，再依次遍历左子树、右子树。
 void preorderTraversal(const int *tree,int n,int i) {
     if (i >= n||tree[i] == -1) {
     return;
